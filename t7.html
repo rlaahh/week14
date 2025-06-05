@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/vfm3luh.css">
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'ekp8plc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<title>시</title>
+	<style type="text/css">
+		html,body{ margin:0;
+		height:100%;
+		color: #D9D9D9;
+		font-family: pretendard, sans-serif;
+		font-weight: 400;
+		font-style: normal;}
+
+		h1{background: #D9D9D9;
+			color: #0019FF;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 4rem;
+			z-index: 10;
+			display: inline-block;
+			margin-top: 20px;
+			margin-bottom: 8px;
+			line-height: 1;
+			}
+			.number {
+		  	display: inline-block; 
+		  	background: #767676;
+		  	color: #00FF40;
+		  	padding: 0em 0.2em;       /* h1 padding에 맞춰서 조정 */
+		  	margin-right: 0.1em;
+		  	line-height: 1;}
+
+		p{color: #D9D9D9;
+			font-size: 2rem;
+			line-height: 1.7;
+			padding: 0px 80px 0px 80px;
+			z-index: 1;
+			position: relative;
+			margin-top: 0;
+			font-family: pretendard, sans-serif;
+			font-weight: 500;
+			font-style: normal;}
+		
+		section{display: flex;
+		height:100vh;}
+
+		.left{height: 100vh;
+		flex: 3;
+		background: black;
+		overflow-x:hidden;
+		padding-left: 80px;
+		 overflow-y: auto;
+		 /* 스크롤바 숨기기 */
+    scrollbar-width: none; /* 파이어폭스 */
+    -ms-overflow-style: none; /* IE 10+ */
+		}
+		.left::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 엣지 */
+		}
+	
+
+		.right{height:100vh;
+		flex: 7;
+		background: black; 
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin: auto;}
+
+
+		.en{font-size: 2rem;
+			line-height: 1.2;
+			background: #D9D9D9;
+			color: #0019FF;
+			display: inline-block;
+			font-family: "helvetica-neue-lt-pro", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			}
+
+		.container {position: relative;
+  			display: inline-block;}
+		.q{padding: 0 0.4em;
+			background: #00FF40;
+			color: #0019FF;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 8px;
+			position: relative;
+			z-index: 2; 
+  			cursor: pointer;
+  			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+		.q-img {
+		  position: absolute;
+		  position: absolute;
+		  top: 8px;
+		  left: 20px;
+		  display: none;
+		  width: 200px;
+		  height: auto;
+		  z-index: 1;
+		}
+
+		/* hover 포스터 */
+		.container:hover .q-img {display: block;}
+		
+		.info-all{margin-top: 50px;
+			z-index: 0;
+			position: relative;}
+
+		.info{font-size: 1.2rem;
+			line-height: 1.5;
+		}
+
+
+		.point-wrap{position: relative;}
+		.point{padding: 0 0.4em;
+			background: #0019FF;
+			color: #00FF40;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 20px;
+			position:relative;
+			left: 80px;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+
+.point::after {
+  content: "밑줄친 부분에 마우스";
+  position: absolute;
+  left: calc(100% + 8px);    /* ! 오른쪽으로 8px */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  white-space: nowrap;
+font-family: pretendard, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+		.hover{position: relative; 
+			cursor: pointer;
+			position: relative; 
+			z-index: 2;
+			color: #D9D9D9;}
+		.hover img{display: none;
+			position: absolute;
+			top: var(--tooltip-top);
+  			left: var(--tooltip-left);
+  			width: auto;
+  			z-index: -1;}
+
+		.hover:hover img {display: block;}
+		.hover:hover {color: #00FF40;}
+
+		
+		.trailer-wrap {padding-left: 80px;
+			padding-top: 20px;}
+
+		/* 얜 keep */
+		.main{
+			width: 50%;
+			border-style: solid;
+			border-color: #D9D9D9;
+			display: block;
+			margin-top: 40px;
+		margin-bottom: 32px;}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="left">
+			<h1><span class="number">7</span>시</h1>
+			<br>
+			<span class="en">Poetry (Si)</span>
+			<br>
+			<div class="container">
+				<div class="q">!</div>
+				<div class="q-img"><img src="film_img/7.png" style="width:100%;"></div>
+			</div>
+			<div class="info-all">
+			<div class="info">제작연도 &nbsp; &nbsp; &nbsp;2010</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">감독 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;이창동</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">장르 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;드라마</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">출연 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;윤정희, 이다윗, 김희라,  <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;안내상</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">상영시간 &nbsp; &nbsp; &nbsp;2시간 19분</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">키워드 &nbsp; &nbsp; &nbsp; &nbsp; 노인, 일상</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="trailer-wrap">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/WDr_Oj2TVoM?si=Im7wTG21vWLlclwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="point">!</div>
+			
+			<p><span class="hover" style="--tooltip-top: -160px; --tooltip-left: -80px;"><u>60대 중반의 나이지만 소녀 같은 감수성을 지닌 미자(윤정희).<img src="t7/girl.png"></u></span> 병원 진료를 마치고 응급실 앞을 지나던 미자는 자살한 한 소녀의 어머니가 울고 있는 모습을 목격하지만, 그곳을 그냥 지나친다. 낡은 서민아파트에서 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>이혼한 딸의 중학생 아들 종욱(이다윗)<img src="t7/son.png"></u></span>을 돌보며 살고 있는 미자는 동네 문화원에서 우연히 ‘시’ 강좌를 수강하면서 난생 처음 시 쓰는 일에 매진한다. 미자는 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>시상을 찾기 위해 그동안 무심히 지나쳤던 일상을 주시하며 아름다움을 찾으려 하지만 녹록지 않다.<img src="t7/poet.png"></u></span> 어느 날 손자 친구의 학부형(안내상)이 찾아오고, 미자는 손자가 자살한 소녀를 집단 성폭행한 일에 가담한 사실을 알게 된다. 그러나 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: -130px;"><u>종욱은 별다른 죄책감을 느끼지 않는 듯<img src="t7/guilty.png"></u></span> 보이고, 가해 학생들의 부모 역시 합의금을 건네는 것으로 사건을 무마하려 한다. 그러는 중, 미자는 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>피해 여학생의 추모 미사에 참석<img src="t7/missa.png"></u></span>하고 그녀의 행적을 더듬어 따라가보기도 한다. 그날 밤 형사들이 찾아와 손자를 연행해가고, <span class="hover" style="--tooltip-top: 60px; --tooltip-left: -100px;"><u>이 모습을 가만히 지켜보던 미자는 마침내 시 한 편을 완성한다.<img src="t7/fin.png"></u></span>
+			</p>
+			
+		</div>
+	</section>
+	
+</body>
+</html>

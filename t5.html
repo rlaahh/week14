@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/vfm3luh.css">
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'ekp8plc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<title>올드보이</title>
+	<style type="text/css">
+		html,body{ margin:0;
+		height:100%;
+		color: #D9D9D9;
+		font-family: pretendard, sans-serif;
+		font-weight: 400;
+		font-style: normal;}
+
+		h1{background: #D9D9D9;
+			color: #0019FF;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 4rem;
+			z-index: 10;
+			display: inline-block;
+			margin-top: 20px;
+			margin-bottom: 8px;
+			line-height: 1;
+			}
+			.number {
+		  	display: inline-block; 
+		  	background: #767676;
+		  	color: #00FF40;
+		  	padding: 0em 0.2em;       /* h1 padding에 맞춰서 조정 */
+		  	margin-right: 0.1em;
+		  	line-height: 1;}
+
+		p{color: #D9D9D9;
+			font-size: 2rem;
+			line-height: 1.7;
+			padding: 0px 80px 0px 80px;
+			z-index: 1;
+			position: relative;
+			margin-top: 0;
+			font-family: pretendard, sans-serif;
+			font-weight: 500;
+			font-style: normal;}
+		
+		section{display: flex;
+		height:100vh;}
+
+		.left{height: 100vh;
+		flex: 3;
+		background: black;
+		overflow-x:hidden;
+		padding-left: 80px;
+		 overflow-y: auto;
+		 /* 스크롤바 숨기기 */
+    scrollbar-width: none; /* 파이어폭스 */
+    -ms-overflow-style: none; /* IE 10+ */
+		}
+		.left::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 엣지 */
+		}
+	
+
+		.right{height:100vh;
+		flex: 7;
+		background: black; 
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin: auto;}
+
+
+		.en{font-size: 2rem;
+			line-height: 1.2;
+			background: #D9D9D9;
+			color: #0019FF;
+			display: inline-block;
+			font-family: "helvetica-neue-lt-pro", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			}
+
+		.container {position: relative;
+  			display: inline-block;}
+		.q{padding: 0 0.4em;
+			background: #00FF40;
+			color: #0019FF;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 8px;
+			position: relative;
+			z-index: 2; 
+  			cursor: pointer;
+  			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+		.q-img {
+		  position: absolute;
+		  position: absolute;
+		  top: 8px;
+		  left: 20px;
+		  display: none;
+		  width: 200px;
+		  height: auto;
+		  z-index: 1;
+		}
+
+		/* hover 포스터 */
+		.container:hover .q-img {display: block;}
+		
+		.info-all{margin-top: 50px;
+			z-index: 0;
+			position: relative;}
+
+		.info{font-size: 1.2rem;
+			line-height: 1.5;
+		}
+
+
+		.point-wrap{position: relative;}
+		.point{padding: 0 0.4em;
+			background: #0019FF;
+			color: #00FF40;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 20px;
+			position:relative;
+			left: 80px;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+
+.point::after {
+  content: "밑줄친 부분에 마우스";
+  position: absolute;
+  left: calc(100% + 8px);    /* ! 오른쪽으로 8px */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  white-space: nowrap;
+font-family: pretendard, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+		.hover{position: relative; 
+			cursor: pointer;
+			position: relative; 
+			z-index: 2;
+			color: #D9D9D9;}
+		.hover img{display: none;
+			position: absolute;
+			top: var(--tooltip-top);
+  			left: var(--tooltip-left);
+  			width: auto;
+  			z-index: -1;}
+
+		.hover:hover img {display: block;}
+		.hover:hover {color: #00FF40;}
+
+		
+		.trailer-wrap {padding-left: 80px;
+			padding-top: 20px;}
+
+		/* 얜 keep */
+		.main{
+			width: 50%;
+			border-style: solid;
+			border-color: #D9D9D9;
+			display: block;
+			margin-top: 40px;
+		margin-bottom: 32px;}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="left">
+			<h1><span class="number">5</span>올드보이</h1>
+			<br>
+			<span class="en">Old Boy</span>
+			<br>
+			<div class="container">
+				<div class="q">!</div>
+				<div class="q-img"><img src="film_img/5.png" style="width:100%;"></div>
+			</div>
+			<div class="info-all">
+			<div class="info">제작연도 &nbsp; &nbsp; &nbsp;2003</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">감독 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;박찬욱</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">장르 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;드라마</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">출연 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;최민식, 유지태, 강혜정,  <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;김병옥, 오달수</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">상영시간 &nbsp; &nbsp; &nbsp;1시간 59분</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">키워드 &nbsp; &nbsp; &nbsp; &nbsp; 반전, 복수</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="trailer-wrap">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/tAaBkFChaRg?si=CYO9MXzZkrQl65JS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="point">!</div>
+			
+			<p>술에 취해 집에 가는 길, 누군가에게 납치당해 <span class="hover" style="--tooltip-top: -180px; --tooltip-left: -50px;"><u>사설 감금방에 갇힌 오대수(최민식)<img src="t5/choi.png"></u></span>는 감금 1년 무렵, TV를 통해 아내가 살해당하고 자신이 용의자로 지목되었음을 알게 된다. 복수와 탈출의 기회를 노리며 그곳에서 지내기를 15년. 어느 날, 잠든 대수에게 최면술사(이승신)가 찾아와 최면을 걸고, 대수는 자신이 납치당했던 곳에서 눈을 뜬다. 그는 우연히 한 일식집에서 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>요리사 미도(강혜정)를 만나고, 그녀를 사랑하게 된다.<img src="t5/mido.png"></u></span> 마침내 대수는 자신을 납치한 <span class="hover" style="--tooltip-top: -150px; --tooltip-left: 0;"><u>우진(유지태)<img src="t5/yoo.png"></u></span>을 만나게 되지만, 우진은 5일 안에 감금의 원인을 스스로 알아내라며 미도와 자신의 목숨을 건 게임을 제안한다. 그 과정에서 대수는 과거의 어떤 기억과 맞닥뜨리고 <span class="hover" style="--tooltip-top: -160px; --tooltip-left: -200px;"><u>충격적인 사실<img src="t5/truth.png"></u></span>을 알게 된다. 눈 덮인 산 중턱, 대수는 최면술사에게 모든 것을 잊게 해달라고 하고, 얼마 후 최면에서 깨어난다. 눈밭에 덩그러니 누워 있는 그를 찾은 미도는 <span class="hover" style="--tooltip-top: -180px; --tooltip-left: 80px;"><u>그의 언 몸을 녹여주며 그를 끌어안는다.<img src="t5/hug.png"></u></span>
+			</p>
+			
+		</div>
+	</section>
+	
+</body>
+</html>

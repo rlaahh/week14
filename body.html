@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/vfm3luh.css">
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'ekp8plc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<style type="text/css">
+		html {background: #D9D9D9;
+			font-family: "pretendard", sans-serif;
+			font-weight: 400;
+			font-style: normal;}
+		body{margin: 0}
+		
+		
+
+		ul {max-width: 1400px;
+			margin: auto;
+			
+			list-style-type: none;
+			margin: 0;
+			padding: 0;}
+		li{float: right;}
+
+		li a {display: block;
+		  color: #0019FF;
+		  text-align: center;
+		  font-size: 1.8rem;
+		  font-weight: 700;
+		  padding: 14px 16px;
+		  text-decoration: none;}
+
+		li a:hover {;
+			opacity: 0.5;}
+		.nav{max-width: 1280px;
+			margin: auto;
+			width: 100%;
+			position: sticky;
+			top: 0;
+			z-index: 100;
+			margin-top: -200px;}
+
+		section{margin-bottom: 200px;
+			padding-top: 340px}
+	    
+	    .container{display: grid;
+	    	margin: auto;
+	    	width: 1280px;
+			height: 140px;
+			grid-template-columns: repeat(20, 1fr);
+			grid-template-rows: 20px ,1fr;
+			align-content: center;
+			justify-content: center;
+			gap: 4px 10px;
+			place-items: center center;}
+
+		.item{width: 100%;}
+		.item-number{text-align: center;
+			font-size: 2rem;}
+
+		.p{display: flex;
+			max-width: 600px;
+			width: 100%;
+			margin: auto;
+			padding: 20px;
+			background: #00ff40;
+			padding-left: 40px;
+			margin-top: 300px;
+			margin-bottom: 200px;
+		}
+
+		.p2{display: flex;
+			max-width: 600px;
+			width: 100%;
+			margin: auto;
+			padding: 20px;
+			background: #00ff40;
+			justify-content: center;
+			margin-bottom: 100px;
+			text-align: center;
+		}
+
+		p{line-height: 1.6;
+			font-size: 1.2rem;
+			word-break: keep-all;}
+
+		.card-wrap{width: 1400px;
+			margin: auto;
+			padding-top: 480px;
+			padding-bottom: 440px;
+			position: relative;}
+		.card-stack{position: relative;
+			width: 400px;
+			height: 200px;
+			transform-style: preserve-3d;
+			perspective: 8000px;
+			transform: rotateX(-30deg);}
+		.card{position: absolute;
+			width: 80%;
+			height: 90%;
+			background-size: cover;
+			background-position: center;
+			left: -40px}
+
+		.card.row-2 {width: 90%;
+			height: 100%;
+      		transform: rotateY(180deg);
+      		top: 1100px;
+      		left: -600px;}
+
+		#info-box {position: absolute;
+    		display: none;
+		    white-space: nowrap;
+		    font-size: 1.2rem;
+		    color: #0019FF;
+		    pointer-events: none;
+		    user-select: none;}
+
+		.t10-wrap{
+			margin: auto;
+			position: relative;
+			margin-top: 300px;
+			padding-bottom: 100px;
+			width: 1000px;
+			height: 1200px;}
+
+		.ticket1{position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 440px;}
+		.ticket3{position: absolute;
+			right: 0px;
+			top: 320px;
+			width: 440px;}
+		.ticket5{position: absolute;
+			right: 0px;
+			top: 640px;
+			width: 440px;}
+		.ticket7{position: absolute;
+			right: 0px;
+			top: 960px;
+			width: 440px;}
+		.ticket9{position: absolute;
+			right: 0px;
+			top: 1280px;
+			width: 440px;}
+	.ticket1:hover,.ticket3:hover,.ticket5:hover,.ticket7:hover,.ticket9:hover {
+		transform:translateX(-100px);
+  		transition: transform 0.4s ease;}
+
+		.ticket2{position: absolute;
+			left: 0px;
+			top: 160px;
+			width: 440px;}
+		.ticket4{position: absolute;
+			left: 0px;
+			top: 480px;
+			width: 440px;}
+		.ticket6{position: absolute;
+			left: 0px;
+			top: 800px;
+			width: 440px;}
+		.ticket8{position: absolute;
+			left: 0px;
+			top: 1120px;
+			width: 440px;}
+		.ticket10{position: absolute;
+			left: 0px;
+			top: 1440px;
+			width: 440px;}
+
+	.ticket2:hover,.ticket4:hover,.ticket6:hover,.ticket8:hover,.ticket10:hover {
+  		transform: translateX(100px); /* 왼쪽으로 밀려 나오기 */
+  		transition: transform 0.4s ease;}
+    
+
+		.card1  { transform: translateX(0px)     translateZ(0px)     rotateY(-45deg); background-image: url('frame_img/1.png');}
+		.card2  { transform: translateX(20px)    translateZ(-20px)   rotateY(-45deg); background-image: url('frame_img/2.png');}
+		.card3  { transform: translateX(40px)    translateZ(-40px)   rotateY(-45deg); background-image: url('frame_img/3.png');}
+		.card4  { transform: translateX(60px)    translateZ(-60px)   rotateY(-45deg); background-image: url('frame_img/4.png');}
+		.card5  { transform: translateX(80px)    translateZ(-80px)   rotateY(-45deg); background-image: url('frame_img/5.png');}
+		.card6  { transform: translateX(100px)   translateZ(-100px)  rotateY(-45deg); background-image: url('frame_img/6.png');}
+		.card7  { transform: translateX(120px)   translateZ(-120px)  rotateY(-45deg); background-image: url('frame_img/7.png');}
+		.card8  { transform: translateX(140px)   translateZ(-140px)  rotateY(-45deg); background-image: url('frame_img/8.png');}
+		.card9  { transform: translateX(160px)   translateZ(-160px)  rotateY(-45deg); background-image: url('frame_img/9.png');}
+		.card10 { transform: translateX(180px)   translateZ(-180px)  rotateY(-45deg); background-image: url('frame_img/10.png');}
+		.card11 { transform: translateX(200px)   translateZ(-200px)  rotateY(-45deg); background-image: url('frame_img/11.png');}
+		.card12 { transform: translateX(220px)   translateZ(-220px)  rotateY(-45deg); background-image: url('frame_img/12.png');}
+		.card13 { transform: translateX(240px)   translateZ(-240px)  rotateY(-45deg); background-image: url('frame_img/13.png');}
+		.card14 { transform: translateX(260px)   translateZ(-260px)  rotateY(-45deg); background-image: url('frame_img/14.png');}
+		.card15 { transform: translateX(280px)   translateZ(-280px)  rotateY(-45deg); background-image: url('frame_img/15.png');}
+		.card16 { transform: translateX(300px)   translateZ(-300px)  rotateY(-45deg); background-image: url('frame_img/16.png');}
+		.card17 { transform: translateX(320px)   translateZ(-320px)  rotateY(-45deg); background-image: url('frame_img/17.png');}
+		.card18 { transform: translateX(340px)   translateZ(-340px)  rotateY(-45deg); background-image: url('frame_img/18.png');}
+		.card19 { transform: translateX(360px)   translateZ(-360px)  rotateY(-45deg); background-image: url('frame_img/19.png');}
+		.card20 { transform: translateX(380px)   translateZ(-380px)  rotateY(-45deg); background-image: url('frame_img/20.png');}
+		.card21 { transform: translateX(400px)   translateZ(-400px)  rotateY(-45deg); background-image: url('frame_img/21.png');}
+		.card22 { transform: translateX(420px)   translateZ(-420px)  rotateY(-45deg); background-image: url('frame_img/22.png');}
+		.card23 { transform: translateX(440px)   translateZ(-440px)  rotateY(-45deg); background-image: url('frame_img/23.png');}
+		.card24 { transform: translateX(460px)   translateZ(-460px)  rotateY(-45deg); background-image: url('frame_img/24.png');}
+		.card25 { transform: translateX(480px)   translateZ(-480px)  rotateY(-45deg); background-image: url('frame_img/25.png');}
+		.card26 { transform: translateX(500px)   translateZ(-500px)  rotateY(-45deg); background-image: url('frame_img/26.png');}
+		.card27 { transform: translateX(520px)   translateZ(-520px)  rotateY(-45deg); background-image: url('frame_img/27.png');}
+		.card28 { transform: translateX(540px)   translateZ(-540px)  rotateY(-45deg); background-image: url('frame_img/28.png');}
+		.card29 { transform: translateX(560px)   translateZ(-560px)  rotateY(-45deg); background-image: url('frame_img/29.png');}
+		.card30 { transform: translateX(580px)   translateZ(-580px)  rotateY(-45deg); background-image: url('frame_img/30.png');}
+		.card31 { transform: translateX(600px)   translateZ(-600px)  rotateY(-45deg); background-image: url('frame_img/31.png');}
+		.card32 { transform: translateX(620px)   translateZ(-620px)  rotateY(-45deg); background-image: url('frame_img/32.png');}
+		.card33 { transform: translateX(640px)   translateZ(-640px)  rotateY(-45deg); background-image: url('frame_img/33.png');}
+		.card34 { transform: translateX(660px)   translateZ(-660px)  rotateY(-45deg); background-image: url('frame_img/34.png');}
+		.card35 { transform: translateX(680px)   translateZ(-680px)  rotateY(-45deg); background-image: url('frame_img/35.png');}
+		.card36 { transform: translateX(700px)   translateZ(-700px)  rotateY(-45deg); background-image: url('frame_img/36.png');}
+		.card37 { transform: translateX(720px)   translateZ(-720px)  rotateY(-45deg); background-image: url('frame_img/37.png');}
+		.card38 { transform: translateX(740px)   translateZ(-740px)  rotateY(-45deg); background-image: url('frame_img/38.png');}
+		.card39 { transform: translateX(760px)   translateZ(-760px)  rotateY(-45deg); background-image: url('frame_img/39.png');}
+		.card40 { transform: translateX(780px)   translateZ(-780px)  rotateY(-45deg); background-image: url('frame_img/40.png');}
+		.card41 { transform: translateX(800px)   translateZ(-800px)  rotateY(-45deg); background-image: url('frame_img/41.png');}
+		.card42 { transform: translateX(820px)   translateZ(-820px)  rotateY(-45deg); background-image: url('frame_img/42.png');}
+		.card43 { transform: translateX(840px)   translateZ(-840px)  rotateY(-45deg); background-image: url('frame_img/43.png');}
+		.card44 { transform: translateX(860px)   translateZ(-860px)  rotateY(-45deg); background-image: url('frame_img/44.png');}
+		.card45 { transform: translateX(880px)   translateZ(-880px)  rotateY(-45deg); background-image: url('frame_img/45.png');}
+		.card46 { transform: translateX(900px)   translateZ(-900px)  rotateY(-45deg); background-image: url('frame_img/46.png');}
+		.card47 { transform: translateX(920px)   translateZ(-920px)  rotateY(-45deg); background-image: url('frame_img/47.png');}
+		.card48 { transform: translateX(940px)   translateZ(-940px)  rotateY(-45deg); background-image: url('frame_img/48.png');}
+		.card49 { transform: translateX(960px)   translateZ(-960px)  rotateY(-45deg); background-image: url('frame_img/49.png');}
+		.card50 { transform: translateX(980px)   translateZ(-980px)  rotateY(-45deg); background-image: url('frame_img/50.png');}
+		
+		/* 반대 섹션 */
+		.card51  { transform: translateX(0px)     translateZ(0px)     rotateY(45deg); background-image: url('frame_img/51.png');}
+		.card52  { transform: translateX(20px)    translateZ(20px)   rotateY(45deg); background-image: url('frame_img/52.png');}
+		.card53  { transform: translateX(40px)    translateZ(40px)   rotateY(45deg); background-image: url('frame_img/53.png');}
+		.card54  { transform: translateX(60px)    translateZ(60px)   rotateY(45deg); background-image: url('frame_img/54.png');}
+		.card55  { transform: translateX(80px)    translateZ(80px)   rotateY(45deg); background-image: url('frame_img/55.png');}
+		.card56  { transform: translateX(100px)   translateZ(100px)  rotateY(45deg); background-image: url('frame_img/56.png');}
+		.card57  { transform: translateX(120px)   translateZ(120px)  rotateY(45deg); background-image: url('frame_img/57.png');}
+		.card58  { transform: translateX(140px)   translateZ(140px)  rotateY(45deg); background-image: url('frame_img/58.png');}
+		.card59  { transform: translateX(160px)   translateZ(160px)  rotateY(45deg); background-image: url('frame_img/59.png');}
+		.card60 { transform: translateX(180px)   translateZ(180px)  rotateY(45deg); background-image: url('frame_img/60.png');}
+		.card61 { transform: translateX(200px)   translateZ(200px)  rotateY(45deg); background-image: url('frame_img/61.png');}
+		.card62 { transform: translateX(220px)   translateZ(220px)  rotateY(45deg); background-image: url('frame_img/62.png');}
+		.card63 { transform: translateX(240px)   translateZ(240px)  rotateY(45deg); background-image: url('frame_img/63.png');}
+		.card64 { transform: translateX(260px)   translateZ(260px)  rotateY(45deg); background-image: url('frame_img/64.png');}
+		.card65 { transform: translateX(280px)   translateZ(280px)  rotateY(45deg); background-image: url('frame_img/65.png');}
+		.card66 { transform: translateX(300px)   translateZ(300px)  rotateY(45deg); background-image: url('frame_img/66.png');}
+		.card67 { transform: translateX(320px)   translateZ(320px)  rotateY(45deg); background-image: url('frame_img/67.png');}
+		.card68 { transform: translateX(340px)   translateZ(340px)  rotateY(45deg); background-image: url('frame_img/68.png');}
+		.card69 { transform: translateX(360px)   translateZ(360px)  rotateY(45deg); background-image: url('frame_img/69.png');}
+		.card70 { transform: translateX(380px)   translateZ(380px)  rotateY(45deg); background-image: url('frame_img/70.png');}
+		.card71 { transform: translateX(400px)   translateZ(400px)  rotateY(45deg); background-image: url('frame_img/71.png');}
+		.card72 { transform: translateX(420px)   translateZ(420px)  rotateY(45deg); background-image: url('frame_img/72.png');}
+		.card73 { transform: translateX(440px)   translateZ(440px)  rotateY(45deg); background-image: url('frame_img/73.png');}
+		.card74 { transform: translateX(460px)   translateZ(460px)  rotateY(45deg); background-image: url('frame_img/74.png');}
+		.card75 { transform: translateX(480px)   translateZ(480px)  rotateY(45deg); background-image: url('frame_img/75.png');}
+		.card76 { transform: translateX(500px)   translateZ(500px)  rotateY(45deg); background-image: url('frame_img/76.png');}
+		.card77 { transform: translateX(520px)   translateZ(520px)  rotateY(45deg); background-image: url('frame_img/77.png');}
+		.card78 { transform: translateX(540px)   translateZ(540px)  rotateY(45deg); background-image: url('frame_img/78.png');}
+		.card79 { transform: translateX(560px)   translateZ(560px)  rotateY(45deg); background-image: url('frame_img/79.png');}
+		.card80 { transform: translateX(580px)   translateZ(580px)  rotateY(45deg); background-image: url('frame_img/80.png');}
+		.card81 { transform: translateX(600px)   translateZ(600px)  rotateY(45deg); background-image: url('frame_img/81.png');}
+		.card82 { transform: translateX(620px)   translateZ(620px)  rotateY(45deg); background-image: url('frame_img/82.png');}
+		.card83 { transform: translateX(640px)   translateZ(640px)  rotateY(45deg); background-image: url('frame_img/83.png');}
+		.card84 { transform: translateX(660px)   translateZ(660px)  rotateY(45deg); background-image: url('frame_img/84.png');}
+		.card85 { transform: translateX(680px)   translateZ(680px)  rotateY(45deg); background-image: url('frame_img/85.png');}
+		.card86 { transform: translateX(700px)   translateZ(700px)  rotateY(45deg); background-image: url('frame_img/86.png');}
+		.card87 { transform: translateX(720px)   translateZ(720px)  rotateY(45deg); background-image: url('frame_img/87.png');}
+		.card88 { transform: translateX(740px)   translateZ(740px)  rotateY(45deg); background-image: url('frame_img/88.png');}
+		.card89 { transform: translateX(760px)   translateZ(760px)  rotateY(45deg); background-image: url('frame_img/89.png');}
+		.card90 { transform: translateX(780px)   translateZ(780px)  rotateY(45deg); background-image: url('frame_img/90.png');}
+		.card91 { transform: translateX(800px)   translateZ(800px)  rotateY(45deg); background-image: url('frame_img/91.png');}
+		.card92 { transform: translateX(820px)   translateZ(820px)  rotateY(45deg); background-image: url('frame_img/92.png');}
+		.card93 { transform: translateX(840px)   translateZ(840px)  rotateY(45deg); background-image: url('frame_img/93.png');}
+		.card94 { transform: translateX(860px)   translateZ(860px)  rotateY(45deg); background-image: url('frame_img/94.png');}
+		.card95 { transform: translateX(880px)   translateZ(880px)  rotateY(45deg); background-image: url('frame_img/95.png');}
+		.card96 { transform: translateX(900px)   translateZ(900px)  rotateY(45deg); background-image: url('frame_img/96.png');}
+		.card97 { transform: translateX(920px)   translateZ(920px)  rotateY(45deg); background-image: url('frame_img/97.png');}
+		.card98 { transform: translateX(940px)   translateZ(940px)  rotateY(45deg); background-image: url('frame_img/98.png');}
+		.card99 { transform: translateX(960px)   translateZ(960px)  rotateY(45deg); background-image: url('frame_img/99.png');}
+		.card100 { transform: translateX(980px)   translateZ(980px)  rotateY(45deg); background-image: url('frame_img/100.png');}
+
+    
+    .album {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+      align-items: center; 
+      justify-content: center;
+      place-items: center center;
+      position: relative;
+      margin-bottom: 200px;
+    }
+
+    /* === 각 아이템 박스 === */
+    .item2 {
+      position: relative;
+      background-color: ;
+      overflow: hidden;
+      
+      cursor: pointer;
+      transition: transform 0.1s;
+      align-items: center;
+      justify-content: center;
+      place-items: center center;
+    }
+    .item2:hover {
+      transform: scale(1.03);
+    }
+    /* 선택되었을 때 테두리(스트로크) */
+    .item2.selected {
+      outline: 4px solid #00ff40;
+      outline-offset: -4px;
+    }
+
+    /* 이미지 스타일 (박스 안에서 중앙에 딱 맞게) */
+    .item2 img {
+      display: block;
+      max-width: 100%;
+      max-height: auto;
+      object-fit: cover;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* 체크마크 아이콘: 선택 시 보이게 */
+    .item2 .checkmark {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 24px;
+      height: 24px;
+      background-color: rgba(0,25,255,1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .item2.selected .checkmark {
+      opacity: 1;
+    }
+    .item2 .checkmark svg {
+      fill: #00ff40;
+      width: 16px;
+      height: 16px;
+    }
+
+    /* === 하단에 고정된 체크 개수 표시 === */
+    #count {
+    	grid-column: 1 / -1;
+      position: sticky;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 6rem;
+      font-weight: bold;
+      color: #0019ff;
+      background-color: rgba(255,255,255,0.0);
+      z-index: 100;
+    }
+    #count.at-bottom {
+  position: absolute;
+  /* 섹션의 bottom 기준으로 -20px */
+  bottom: -150px;
+   left: 50%;                     /* 가로 위치는 그대로 */
+  transform: translateX(-50%)
+
+  /* sticky일 때 쓰던 bottom/transform/left 등은 필요 없거나 덮어써짐 */
+              /* 뷰포트 너비의 50% 지점 */
+  ;}
+
+	</style>
+	
+	<title>100 KOREAN FILMS ARCHIVE</title>
+</head>
+
+<body id="1">
+	
+
+	<ul class="nav">
+		<li style="float:left;"><a href="index.html">(<span style="font-family: 'helvetica-neue-lt-pro', sans-serif;">KOFA</span>)</a></li>
+		<li><a href="#4">(<span style="font-family: 'helvetica-neue-lt-pro', sans-serif;">CheckList</span>)</a></li>
+		<li><a href="#3">(10)</a></li>
+		<li><a href="#2">(100)</a></li>
+	  <li><a href="#1">(<span style="font-family: 'helvetica-neue-lt-pro', sans-serif;">F</span>)</a></li>
+	  
+	</ul>
+
+	<section> 
+		<div class="container">
+			<div class="item-number">1</div>
+			<div class="item-number">2</div>
+			<div class="item-number">3</div>
+			<div class="item-number">4</div>
+			<div class="item-number">5</div>
+			<div class="item-number">6</div>
+			<div class="item-number">7</div>
+			<div class="item-number">8</div>
+			<div class="item-number">9</div>
+			<div class="item-number">10</div>
+			<div class="item-number">11</div>
+			<div class="item-number">12</div>
+			<div class="item-number">13</div>
+			<div class="item-number">14</div>
+			<div class="item-number">15</div>
+			<div class="item-number">16</div>
+			<div class="item-number">17</div>
+			<div class="item-number">18</div>
+			<div class="item-number">19</div>
+			<div class="item-number">20</div>
+			<img src="film_img/1.png" class="item">
+			<img src="film_img/2.png" class="item">
+			<img src="film_img/3.png" class="item">
+			<img src="film_img/4.png" class="item">
+			<img src="film_img/5.png" class="item">
+			<img src="film_img/6.png" class="item">
+			<img src="film_img/7.png" class="item">
+			<img src="film_img/8.png" class="item">
+			<img src="film_img/9.png" class="item">
+			<img src="film_img/10.png" class="item">
+			<div class="item"></div>
+			<img src="film_img/12.png" class="item">
+			<div class="item"></div>
+			<img src="film_img/14.png" class="item">
+			<img src="film_img/15.png" class="item">
+			<img src="film_img/16.png" class="item">
+			<img src="film_img/17.png" class="item">
+			<img src="film_img/18.png" class="item">
+			<img src="film_img/19.png" class="item">
+			<img src="film_img/20.png" class="item">
+		</div>
+<!-- 구분 -->
+		<div class="container">
+			<div class="item-number">21</div>
+			<div class="item-number">22</div>
+			<div class="item-number">23</div>
+			<div class="item-number">24</div>
+			<div class="item-number">25</div>
+			<div class="item-number">26</div>
+			<div class="item-number">27</div>
+			<div class="item-number">28</div>
+			<div class="item-number">29</div>
+			<div class="item-number">30</div>
+			<div class="item-number">31</div>
+			<div class="item-number">32</div>
+			<div class="item-number">33</div>
+			<div class="item-number">34</div>
+			<div class="item-number">35</div>
+			<div class="item-number">36</div>
+			<div class="item-number">37</div>
+			<div class="item-number">38</div>
+			<div class="item-number">39</div>
+			<div class="item-number">40</div>
+			<img src="film_img/21.png" class="item">
+			<img src="film_img/22.png" class="item">
+			<img src="film_img/23.png" class="item">
+			<img src="film_img/24.png" class="item">
+			<img src="film_img/25.png" class="item">
+			<img src="film_img/26.png" class="item">
+			<img src="film_img/27.png" class="item">
+			<img src="film_img/28.png" class="item">
+			<img src="film_img/29.png" class="item">
+			<img src="film_img/30.png" class="item">
+			<img src="film_img/31.png" class="item">
+			<img src="film_img/32.png" class="item">
+			<img src="film_img/33.png" class="item">
+			<img src="film_img/34.png" class="item">
+			<div class="item"></div>
+			<img src="film_img/36.png" class="item">
+			<img src="film_img/37.png" class="item">
+			<img src="film_img/38.png" class="item">
+			<img src="film_img/39.png" class="item">
+			<img src="film_img/40.png" class="item">
+		</div>
+<!-- 구분 -->
+		<div class="container">
+			<div class="item-number">41</div>
+			<div class="item-number">42</div>
+			<div class="item-number">43</div>
+			<div class="item-number">44</div>
+			<div class="item-number">45</div>
+			<div class="item-number">46</div>
+			<div class="item-number">47</div>
+			<div class="item-number">48</div>
+			<div class="item-number">49</div>
+			<div class="item-number">50</div>
+			<div class="item-number">51</div>
+			<div class="item-number">52</div>
+			<div class="item-number">53</div>
+			<div class="item-number">54</div>
+			<div class="item-number">55</div>
+			<div class="item-number">56</div>
+			<div class="item-number">57</div>
+			<div class="item-number">58</div>
+			<div class="item-number">59</div>
+			<div class="item-number">60</div>
+			<img src="film_img/41.png" class="item">
+			<img src="film_img/42.png" class="item">
+			<img src="film_img/43.png" class="item">
+			<img src="film_img/44.png" class="item">
+			<div class="item"></div>
+			<img src="film_img/46.png" class="item">
+			<img src="film_img/47.png" class="item">
+			<img src="film_img/48.png" class="item">
+			<img src="film_img/49.png" class="item">
+			<img src="film_img/50.png" class="item">
+			<img src="film_img/51.png" class="item">
+			<img src="film_img/52.png" class="item">
+			<img src="film_img/53.png" class="item">
+			<img src="film_img/54.png" class="item">
+			<img src="film_img/55.png" class="item">
+			<div class="item"></div>
+			<img src="film_img/57.png" class="item">
+			<img src="film_img/58.png" class="item">
+			<img src="film_img/59.png" class="item">
+			<img src="film_img/60.png" class="item">
+		</div>
+<!-- 구분 -->
+		<div class="container">
+			<div class="item-number">61</div>
+			<div class="item-number">62</div>
+			<div class="item-number">63</div>
+			<div class="item-number">64</div>
+			<div class="item-number">65</div>
+			<div class="item-number">66</div>
+			<div class="item-number">67</div>
+			<div class="item-number">68</div>
+			<div class="item-number">69</div>
+			<div class="item-number">70</div>
+			<div class="item-number">71</div>
+			<div class="item-number">72</div>
+			<div class="item-number">73</div>
+			<div class="item-number">74</div>
+			<div class="item-number">75</div>
+			<div class="item-number">76</div>
+			<div class="item-number">77</div>
+			<div class="item-number">78</div>
+			<div class="item-number">79</div>
+			<div class="item-number">80</div>
+			<img src="film_img/61.png" class="item">
+			<img src="film_img/62.png" class="item">
+			<img src="film_img/63.png" class="item">
+			<img src="film_img/64.png" class="item">
+			<img src="film_img/65.png" class="item">
+			<img src="film_img/66.png" class="item">
+			<img src="film_img/67.png" class="item">
+			<img src="film_img/68.png" class="item">
+			<img src="film_img/69.png" class="item">
+			<img src="film_img/70.png" class="item">
+			<img src="film_img/71.png" class="item">
+			<img src="film_img/72.png" class="item">
+			<img src="film_img/73.png" class="item">
+			<img src="film_img/74.png" class="item">
+			<img src="film_img/75.png" class="item">
+			<img src="film_img/76.png" class="item">
+			<img src="film_img/77.png" class="item">
+			<img src="film_img/78.png" class="item">
+			<img src="film_img/79.png" class="item">
+			<img src="film_img/80.png" class="item">
+		</div>
+<!-- 구분 -->
+		<div class="container">
+			<div class="item-number">81</div>
+			<div class="item-number">82</div>
+			<div class="item-number">83</div>
+			<div class="item-number">84</div>
+			<div class="item-number">85</div>
+			<div class="item-number">86</div>
+			<div class="item-number">87</div>
+			<div class="item-number">88</div>
+			<div class="item-number">89</div>
+			<div class="item-number">90</div>
+			<div class="item-number">91</div>
+			<div class="item-number">92</div>
+			<div class="item-number">93</div>
+			<div class="item-number">94</div>
+			<div class="item-number">95</div>
+			<div class="item-number">96</div>
+			<div class="item-number">97</div>
+			<div class="item-number">98</div>
+			<div class="item-number">99</div>
+			<div class="item-number">100</div>
+			<img src="film_img/81.png" class="item">
+			<img src="film_img/82.png" class="item">
+			<div class="item"></div>
+			<img src="film_img/84.png" class="item">
+			<img src="film_img/85.png" class="item">
+			<img src="film_img/86.png" class="item">
+			<img src="film_img/87.png" class="item">
+			<img src="film_img/88.png" class="item">
+			<img src="film_img/89.png" class="item">
+			<img src="film_img/90.png" class="item">
+			<img src="film_img/91.png" class="item">
+			<img src="film_img/92.png" class="item">
+			<img src="film_img/93.png" class="item">
+			<img src="film_img/94.png" class="item">
+			<img src="film_img/95.png" class="item">
+			<img src="film_img/96.png" class="item">
+			<img src="film_img/97.png" class="item">
+			<img src="film_img/98.png" class="item">
+			<img src="film_img/99.png" class="item">
+			<img src="film_img/100.png" class="item">
+		</div>
+	</section> 
+
+
+	<section class="p">
+			<p>한국영상자료원(KOFA)은 설립 50주년을 맞이하여 영화의 연구자, 평론가, 창작자, 영화업계 종사자 등 240인이 뽑은 한국영화100선 목록을 발표했다. 한국영화 100선을 통해 그간 누적된 한국영화의 발자취를 짚어볼 수 있으며, 특히 한국영화를 이끌어나가는 영화업계 종사자들의 시각 역시 확인할 수 있다. 가장 오래된 극영화 필름 <청춘의 십자로>(안종화, 1934)부터 2022년 12월 31일까지 극장 및 온라인 플랫폼, 영화제를 통해 공개된 한국 장편영화를 대상으로 세 달간의 투표를 통해 선정되었다.</p>
+	</section>
+
+
+	<section class="card-wrap" id="2">
+		 <div class="card-stack">
+		    <div class="card card1"></div>
+		    <div class="card card2"></div>
+		    <div class="card card3"></div>
+		    <div class="card card4"></div>
+		    <div class="card card5"></div>
+		    <div class="card card6"></div>
+		    <div class="card card7"></div>
+		    <div class="card card8"></div>
+		    <div class="card card9"></div>
+		    <div class="card card10"></div>
+		    <div class="card card11"></div>
+		    <div class="card card12"></div>
+		    <div class="card card13"></div>
+		    <div class="card card14"></div>
+		    <div class="card card15"></div>
+		    <div class="card card16"></div>
+		    <div class="card card17"></div>
+		    <div class="card card18"></div>
+		    <div class="card card19"></div>
+		    <div class="card card20"></div>
+		    <div class="card card21"></div>
+		    <div class="card card22"></div>
+		    <div class="card card23"></div>
+		    <div class="card card24"></div>
+		    <div class="card card25"></div>
+		    <div class="card card26"></div>
+		    <div class="card card27"></div>
+		    <div class="card card28"></div>
+		    <div class="card card29"></div>
+		    <div class="card card30"></div>
+		    <div class="card card31"></div>
+		    <div class="card card32"></div>
+		    <div class="card card33"></div>
+		    <div class="card card34"></div>
+		    <div class="card card35"></div>
+		    <div class="card card36"></div>
+		    <div class="card card37"></div>
+		    <div class="card card38"></div>
+		    <div class="card card39"></div>
+		    <div class="card card40"></div>
+		    <div class="card card41"></div>
+		    <div class="card card42"></div>
+		    <div class="card card43"></div>
+		    <div class="card card44"></div>
+		    <div class="card card45"></div>
+		    <div class="card card46"></div>
+		    <div class="card card47"></div>
+		    <div class="card card48"></div>
+		    <div class="card card49"></div>
+		    <div class="card card50"></div>
+		    <div class="card card51 row-2"></div>
+		    <div class="card card52 row-2"></div>
+		    <div class="card card53 row-2"></div>
+		    <div class="card card54 row-2"></div>
+		    <div class="card card55 row-2"></div>
+		    <div class="card card56 row-2"></div>
+		    <div class="card card57 row-2"></div>
+		    <div class="card card58 row-2"></div>
+		    <div class="card card59 row-2"></div>
+		    <div class="card card60 row-2"></div>
+		    <div class="card card61 row-2"></div>
+		    <div class="card card62 row-2"></div>
+		    <div class="card card63 row-2"></div>
+		    <div class="card card64 row-2"></div>
+		    <div class="card card65 row-2"></div>
+		    <div class="card card66 row-2"></div>
+		    <div class="card card67 row-2"></div>
+		    <div class="card card68 row-2"></div>
+		    <div class="card card69 row-2"></div>
+		    <div class="card card70 row-2"></div>
+		    <div class="card card71 row-2"></div>
+		    <div class="card card72 row-2"></div>
+		    <div class="card card73 row-2"></div>
+		    <div class="card card74 row-2"></div>
+		    <div class="card card75 row-2"></div>
+		    <div class="card card76 row-2"></div>
+		    <div class="card card77 row-2"></div>
+		    <div class="card card78 row-2"></div>
+		    <div class="card card79 row-2"></div>
+		    <div class="card card80 row-2"></div>
+		    <div class="card card81 row-2"></div>
+		    <div class="card card82 row-2"></div>
+		    <div class="card card83 row-2"></div>
+		    <div class="card card84 row-2"></div>
+		    <div class="card card85 row-2"></div>
+		    <div class="card card86 row-2"></div>
+		    <div class="card card87 row-2"></div>
+		    <div class="card card88 row-2"></div>
+		    <div class="card card89 row-2"></div>
+		    <div class="card card90 row-2"></div>
+		    <div class="card card91 row-2"></div>
+		    <div class="card card92 row-2"></div>
+		    <div class="card card93 row-2"></div>
+		    <div class="card card94 row-2"></div>
+		    <div class="card card95 row-2"></div>
+		    <div class="card card96 row-2"></div>
+		    <div class="card card97 row-2"></div>
+		    <div class="card card98 row-2"></div>
+		    <div class="card card99 row-2"></div>
+		    <div class="card card100 row-2"></div>
+  		</div>
+  		<div id="info-box"></div>
+	</section>
+
+	<script>
+		const cards = document.querySelectorAll('.card');
+  		const infoBox = document.getElementById('info-box');
+  		const cardWrap = document.querySelector('.card-wrap');
+  		const baseTranslateX = 20;  
+  		const baseTranslateZ = -20;
+
+
+		// 카드 정보
+		  const cardInfos = [
+		    "하녀(김기영, 1960)",
+		    "살인의 추억(봉준호, 2003)",
+		    "기생충(봉준호, 2019)",
+		    "오발탄(유현목, 1961)",
+		    "올드보이(박찬욱, 2003)",
+		    "바보들의 행진(하길종, 1975)",
+		    "시(이창동, 2010)",
+		    "8월의 크리스마스(허진호,1998)",
+		    "헤어질 결심 (박찬욱, 2022)",
+				"돼지가 우물에 빠진 날 (홍상수, 1996)",
+			"청춘의 십자로 (안종화, 1934)",
+			"반도의 봄 (이병일, 1941)",
+			"마음의 고향 (윤용규, 1949)",
+			"미망인 (박남옥, 1955)",
+			"피아골 (이강천, 1955)",
+			"자유부인 (한형모, 1956)",
+			"지옥화 (신상옥, 1958)",
+			"사랑방 손님과 어머니 (신상옥, 1961)",
+			"마부 (강대진, 1961)",
+			"돌아오지 않는 해병 (이만희, 1963)",
+			"몰래방아 (이만희, 1966)",
+			"안개 (김수용, 1967)",
+			"귀로 (이만희, 1967)",
+			"휴일 (이만희, 1968)",
+			"장군의 수염 (이성구, 1968)",
+			"화녀 (김기영, 1970)",
+			"화분 (하길종, 1972)",
+			"별들의 고향 (이장호, 1974)",
+			"삼포가는 길 (이만희, 1975)",
+			"영자의 전성시대 (김호선, 1975)",
+			"이어도 (김기영, 1977)",
+			"살인나비를 쫓는 여자 (김기영, 1978)",
+			"바람불어 좋은날 (이장호, 1980)",
+			"최후의 증인 (이두용, 1980)",
+		  "짝코 (임권택, 1980)",
+		  "피막 (이두용, 1980)",
+			"만다라 (임권택, 1981)",
+			"꼬방동네 사람들 (배창호, 1982)",
+			"바보선언 (이장호, 1983)",
+			"고래사냥 (배창호, 1984)",
+			"길소뜸 (임권택, 1985)",
+			"깊고 푸른 밤 (배창호, 1985)",
+			"씨받이 (임권택, 1986)",
+			"기쁜 우리 젊은 날 (배창호, 1987)",
+			"상계동 올림픽 (김동원, 1988)",
+			"칠수와 만수 (박광수, 1988)",
+		    "개그맨 (이명세, 1988)",
+			"달마가 동쪽으로 간 까닭은? (배용균, 1989)",
+			"우묵배미의 사랑 (장선우, 1990)",
+			"파업전야 (이은기, 이재구, 장동홍, 장윤현, 1990)",
+				"그들도 우리처럼 (박광수, 1990)",
+				"남부군 (정지영, 1990)",
+				"경마장 가는 길 (장선우, 1991)",
+				"서편제 (임권택, 1993)",
+				"첫사랑 (이명세, 1993)",
+				"낮은 목소리 - 아시아에서 여성으로 산다는 것 (변영주, 1995)",
+				"검으나 땅에 희나 백성 (배용균, 1995)",
+				"꽃잎 (장선우, 1996)",
+				"초록 물고기 (이창동, 1997)",
+				"접속 (장윤현, 1997)",
+				"넘버 3 (송능한, 1997)",
+				"강원도의 힘 (홍상수, 1998)",
+				"여고괴담 두번째 이야기 (김태용, 민규동, 1999)",
+				"박하사탕 (이창동, 1999)",
+				"인정사정 볼것 없다 (이명세, 1999)",
+				"쉬리 (강제규, 1999)",
+				"죽거나 혹은 나쁘거나 (류승완, 2000)",
+				"춘향뎐 (임권택, 2000)",
+				"반칙왕 (김지운, 2000)",
+				"공동경비구역 J.S.A (박찬욱, 2000)",
+				"와이키키 브라더스 (임순례, 2001)",
+				"봄날은 간다 (허진호, 2001)",
+				"고양이를 부탁해 (정재은, 2001)",
+				"소름 (윤종찬, 2001)",
+				"복수는 나의 것 (박찬욱, 2002)",
+				"송환 (김동원, 2003)",
+				"지구를 지켜라! (장준환, 2003)",
+				"친절한 금자씨 (박찬욱, 2005)",
+				"그때 그사람들 (임상수, 2005)",
+				"왕의 남자 (이준익, 2005)",
+				"괴물 (봉준호, 2006)",
+				"타짜 (최동훈, 2006)",
+				"파산의 기술記述 (이강현, 2006)",
+				"가족의 탄생 (김태용, 2006)",
+				"밀양 (이창동, 2007)",
+				"추격자 (나홍진, 2007)",
+				"박쥐 (박찬욱, 2009)",
+				"마더 (봉준호, 2009)",
+				"두 개의 문 (김일란, 홍지유, 2011)",
+				"지슬 - 끝나지않은 세월2 (오멸, 2012)",
+				"도희야 (정주리, 2014)",
+				"곡성 (나홍진, 2015)",
+				"비밀은 없다 (이경미, 2015)",
+				"동주 (이준익, 2015)",
+				"아가씨 (박찬욱, 2016)",
+				"우리들 (윤가은, 2016)",
+				"부산행 (연상호, 2016)",
+				"버닝 (이창동, 2018)",
+				"벌새 (김보라, 2018)",
+				"자산어보 (이준익, 2019)",
+		  ];
+
+		function hoverCard(index) {
+    	cards.forEach((c, i) => {
+      	if (i < index) {
+        const moveX = baseTranslateX * i - 240;
+        const moveZ = baseTranslateZ * i;
+        c.style.transform = `translateX(${moveX}px) translateZ(${moveZ}px) rotateY(-45deg)`;
+        c.style.zIndex = i;
+      } else if (i === index) {
+        const moveX = baseTranslateX * i;
+        const moveZ = baseTranslateZ * i;
+        c.style.transform = `translateX(${moveX}px) translateZ(${moveZ}px) rotateY(-45deg) scale(1.1)`;
+        c.style.zIndex = 1000;
+
+        infoBox.textContent = cardInfos[i];
+        const rect = c.getBoundingClientRect();
+        const wrapRect = cardWrap.getBoundingClientRect();
+        const leftPos = rect.right - wrapRect.left + 10;
+        const topPos = rect.top - wrapRect.top + rect.height * 0.8;
+        infoBox.style.left = `${leftPos}px`;
+        infoBox.style.top = `${topPos}px`;
+        infoBox.style.display = 'block';
+      } else {
+        const moveX = baseTranslateX * i + 80;
+        const moveZ = baseTranslateZ * i;
+        c.style.transform = `translateX(${moveX}px) translateY(-180px) translateZ(${moveZ}px) rotateY(-45deg)`;
+        c.style.zIndex = i;
+      }
+    });
+  }
+
+  		function resetCards() {
+    	cards.forEach((c, i) => {
+      	const moveX = baseTranslateX * i;
+      	const moveZ = baseTranslateZ * i;
+      	c.style.transform = `translateX(${moveX}px) translateZ(${moveZ}px) rotateY(-45deg) scale(1)`;
+      	c.style.zIndex = '';
+    });
+    infoBox.style.display = 'none';
+  }
+
+  // 초기 세팅
+  resetCards();
+
+  // 이벤트 등록
+  cards.forEach((card, index) => {
+    card.addEventListener('mouseenter', () => {
+      hoverCard(index);
+    });
+  });
+
+  cardWrap.addEventListener('mouseleave', () => {
+    resetCards();
+  });
+
+	</script>
+
+	<section class="t10-wrap" id="3">
+	<a href="t1.html">
+		<img src="ticket1.png" class="ticket1">
+	</a>
+	<a href="t2.html">
+		<img src="ticket2.png" class="ticket2">
+	</a>
+	<a href="t3.html">
+		<img src="ticket3.png" class="ticket3">
+	</a>
+	<a href="t4.html">
+		<img src="ticket4.png" class="ticket4">
+	</a>
+	<a href="t5.html">
+		<img src="ticket5.png" class="ticket5">
+	</a>
+	<a href="t6.html">
+		<img src="ticket6.png" class="ticket6">
+	</a>
+	<a href="t7.html">	
+		<img src="ticket7.png" class="ticket7">
+		</a>
+	<a href="t8.html">
+		<img src="ticket8.png" class="ticket8">
+	</a>
+	<a href="t9.html">
+		<img src="ticket9.png" class="ticket9">
+	</a>
+	<a href="t10.html">
+		<img src="ticket10.png" class="ticket10">
+	</a>
+	</section>
+
+	 <section id="4" >
+	 	 <p class="p2">100편 중 몇 편의 영화를 봤는지 확인해 보세요.</p>
+			<div class="album" id="albumContainer" >
+			<div class="item2"><img src="film_img/1.png" alt="이미지1" /></div>
+			<div class="item2"><img src="film_img/2.png" alt="이미지2" /></div>
+			<div class="item2"><img src="film_img/3.png" alt="이미지3" /></div>
+			<div class="item2"><img src="film_img/4.png" alt="이미지4" /></div>
+			<div class="item2"><img src="film_img/5.png" alt="이미지5" /></div>
+			<div class="item2"><img src="film_img/6.png" alt="이미지6" /></div>
+			<div class="item2"><img src="film_img/7.png" alt="이미지7" /></div>
+			<div class="item2"><img src="film_img/8.png" alt="이미지8" /></div>
+			<div class="item2"><img src="film_img/9.png" alt="이미지9" /></div>
+			<div class="item2"><img src="film_img/10.png" alt="이미지10" /></div>
+			<div class="item2"><img src="film_img/11.png" alt="이미지11" /></div>
+			<div class="item2"><img src="film_img/12.png" alt="이미지12" /></div>
+			<div class="item2"><img src="film_img/13.png" alt="이미지13" /></div>
+			<div class="item2"><img src="film_img/14.png" alt="이미지14" /></div>
+			<div class="item2"><img src="film_img/15.png" alt="이미지15" /></div>
+			<div class="item2"><img src="film_img/16.png" alt="이미지16" /></div>
+			<div class="item2"><img src="film_img/17.png" alt="이미지17" /></div>
+			<div class="item2"><img src="film_img/18.png" alt="이미지18" /></div>
+			<div class="item2"><img src="film_img/19.png" alt="이미지19" /></div>
+			<div class="item2"><img src="film_img/20.png" alt="이미지20" /></div>
+			<div class="item2"><img src="film_img/21.png" alt="이미지21" /></div>
+			<div class="item2"><img src="film_img/22.png" alt="이미지22" /></div>
+			<div class="item2"><img src="film_img/23.png" alt="이미지23" /></div>
+			<div class="item2"><img src="film_img/24.png" alt="이미지24" /></div>
+			<div class="item2"><img src="film_img/25.png" alt="이미지25" /></div>
+			<div class="item2"><img src="film_img/26.png" alt="이미지26" /></div>
+			<div class="item2"><img src="film_img/27.png" alt="이미지27" /></div>
+			<div class="item2"><img src="film_img/28.png" alt="이미지28" /></div>
+			<div class="item2"><img src="film_img/29.png" alt="이미지29" /></div>
+			<div class="item2"><img src="film_img/30.png" alt="이미지30" /></div>
+			<div class="item2"><img src="film_img/31.png" alt="이미지31" /></div>
+			<div class="item2"><img src="film_img/32.png" alt="이미지32" /></div>
+			<div class="item2"><img src="film_img/33.png" alt="이미지33" /></div>
+			<div class="item2"><img src="film_img/34.png" alt="이미지34" /></div>
+			<div class="item2"><img src="film_img/35.png" alt="이미지35" /></div>
+			<div class="item2"><img src="film_img/36.png" alt="이미지36" /></div>
+			<div class="item2"><img src="film_img/37.png" alt="이미지37" /></div>
+			<div class="item2"><img src="film_img/38.png" alt="이미지38" /></div>
+			<div class="item2"><img src="film_img/39.png" alt="이미지39" /></div>
+			<div class="item2"><img src="film_img/40.png" alt="이미지40" /></div>
+			<div class="item2"><img src="film_img/41.png" alt="이미지41" /></div>
+			<div class="item2"><img src="film_img/42.png" alt="이미지42" /></div>
+			<div class="item2"><img src="film_img/43.png" alt="이미지43" /></div>
+			<div class="item2"><img src="film_img/44.png" alt="이미지44" /></div>
+			<div class="item2"><img src="film_img/45.png" alt="이미지45" /></div>
+			<div class="item2"><img src="film_img/46.png" alt="이미지46" /></div>
+			<div class="item2"><img src="film_img/47.png" alt="이미지47" /></div>
+			<div class="item2"><img src="film_img/48.png" alt="이미지48" /></div>
+			<div class="item2"><img src="film_img/49.png" alt="이미지49" /></div>
+			<div class="item2"><img src="film_img/50.png" alt="이미지50" /></div>
+			<div class="item2"><img src="film_img/51.png" alt="이미지51" /></div>
+			<div class="item2"><img src="film_img/52.png" alt="이미지52" /></div>
+			<div class="item2"><img src="film_img/53.png" alt="이미지53" /></div>
+			<div class="item2"><img src="film_img/54.png" alt="이미지54" /></div>
+			<div class="item2"><img src="film_img/55.png" alt="이미지55" /></div>
+			<div class="item2"><img src="film_img/56.png" alt="이미지56" /></div>
+			<div class="item2"><img src="film_img/57.png" alt="이미지57" /></div>
+			<div class="item2"><img src="film_img/58.png" alt="이미지58" /></div>
+			<div class="item2"><img src="film_img/59.png" alt="이미지59" /></div>
+			<div class="item2"><img src="film_img/60.png" alt="이미지60" /></div>
+			<div class="item2"><img src="film_img/61.png" alt="이미지61" /></div>
+			<div class="item2"><img src="film_img/62.png" alt="이미지62" /></div>
+			<div class="item2"><img src="film_img/63.png" alt="이미지63" /></div>
+			<div class="item2"><img src="film_img/64.png" alt="이미지64" /></div>
+			<div class="item2"><img src="film_img/65.png" alt="이미지65" /></div>
+			<div class="item2"><img src="film_img/66.png" alt="이미지66" /></div>
+			<div class="item2"><img src="film_img/67.png" alt="이미지67" /></div>
+			<div class="item2"><img src="film_img/68.png" alt="이미지68" /></div>
+			<div class="item2"><img src="film_img/69.png" alt="이미지69" /></div>
+			<div class="item2"><img src="film_img/70.png" alt="이미지70" /></div>
+			<div class="item2"><img src="film_img/71.png" alt="이미지71" /></div>
+			<div class="item2"><img src="film_img/72.png" alt="이미지72" /></div>
+			<div class="item2"><img src="film_img/73.png" alt="이미지73" /></div>
+			<div class="item2"><img src="film_img/74.png" alt="이미지74" /></div>
+			<div class="item2"><img src="film_img/75.png" alt="이미지75" /></div>
+			<div class="item2"><img src="film_img/76.png" alt="이미지76" /></div>
+			<div class="item2"><img src="film_img/77.png" alt="이미지77" /></div>
+			<div class="item2"><img src="film_img/78.png" alt="이미지78" /></div>
+			<div class="item2"><img src="film_img/79.png" alt="이미지79" /></div>
+			<div class="item2"><img src="film_img/80.png" alt="이미지80" /></div>
+			<div class="item2"><img src="film_img/81.png" alt="이미지81" /></div>
+			<div class="item2"><img src="film_img/82.png" alt="이미지82" /></div>
+			<div class="item2"><img src="film_img/83.png" alt="이미지83" /></div>
+			<div class="item2"><img src="film_img/84.png" alt="이미지84" /></div>
+			<div class="item2"><img src="film_img/85.png" alt="이미지85" /></div>
+			<div class="item2"><img src="film_img/86.png" alt="이미지86" /></div>
+			<div class="item2"><img src="film_img/87.png" alt="이미지87" /></div>
+			<div class="item2"><img src="film_img/88.png" alt="이미지88" /></div>
+			<div class="item2"><img src="film_img/89.png" alt="이미지89" /></div>
+			<div class="item2"><img src="film_img/90.png" alt="이미지90" /></div>
+			<div class="item2"><img src="film_img/91.png" alt="이미지91" /></div>
+			<div class="item2"><img src="film_img/92.png" alt="이미지92" /></div>
+			<div class="item2"><img src="film_img/93.png" alt="이미지93" /></div>
+			<div class="item2"><img src="film_img/94.png" alt="이미지94" /></div>
+			<div class="item2"><img src="film_img/95.png" alt="이미지95" /></div>
+			<div class="item2"><img src="film_img/96.png" alt="이미지96" /></div>
+			<div class="item2"><img src="film_img/97.png" alt="이미지97" /></div>
+			<div class="item2"><img src="film_img/98.png" alt="이미지98" /></div>
+			<div class="item2"><img src="film_img/99.png" alt="이미지99" /></div>
+			<div class="item2"><img src="film_img/100.png" alt="이미지100" /></div>
+			<div id="count">0/100</div> 
+  </section>
+
+  <!-- 체크 -->
+  <template id="checkmarkTemplate">
+    <div class="checkmark">
+      <svg viewBox="0 0 24 24">
+        <path d="M20.285 6.708L9 18l-5.285-5.292 1.428-1.416L9 15.146l9.857-9.854z"/>
+      </svg>
+    </div>
+  </template>
+
+  <script>
+    const album = document.getElementById('albumContainer');
+    const countLabel = document.getElementById('count');
+    const checkmarkTpl = document.getElementById('checkmarkTemplate').content;
+
+    // .item 요소들을 배열로 가져옴
+    const items = Array.from(album.querySelectorAll('.item2'));
+    // 총 개수 자동 계산 (HTML에 넣은 .item 개수)
+    const totalCount = items.length;
+
+    // 각 .item마다 체크마크 아이콘을 붙임
+    items.forEach(item => {
+      const mark = document.importNode(checkmarkTpl, true);
+      item.appendChild(mark);
+    });
+
+    // 선택된 개수 반환
+    function getSelectedCount() {
+      return items.filter(el => el.classList.contains('selected')).length;
+    }
+
+    // countLabel 업데이트 (체크한 개수/총개수)
+    function updateCountLabel() {
+      const checked = getSelectedCount();
+      countLabel.textContent = `${checked}/${totalCount}`;
+    }
+
+    // 각 아이템에 클릭 이벤트 붙이기
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('selected');
+        updateCountLabel();
+      });
+    });
+
+    // 페이지 로드 시 초기 count 설정
+    updateCountLabel();
+
+    function onScrollOrResize() {
+    // 섹션의 바운딩 박스 정보
+    const rect = album.getBoundingClientRect();
+    // 뷰포트 높이
+    const vh = window.innerHeight;
+
+    // 섹션 바닥이 뷰포트 바닥보다 위쪽에 닿았거나 지나갔다면
+    // rect.bottom <= vh + 20(=sticky offset) 의 의미: 
+    // “섹션 bottom이 (뷰포트 bottom+20px)보다 위쪽일 때” 
+    // → #count를 absolute 상태로 바꿔서 bottom: -20px 위치로 이동시킴
+    if (rect.bottom <= vh + 20) {
+      countLabel.classList.add('at-bottom');
+    } else {
+      countLabel.classList.remove('at-bottom');
+    }
+  }
+
+  // 스크롤 이벤트 + 리사이즈 이벤트에 리스너 등록
+  window.addEventListener('scroll', onScrollOrResize);
+  window.addEventListener('resize', onScrollOrResize);
+
+  // 페이지 로드될 때 한 번 실행해서 초기 상태 판단
+  onScrollOrResize();
+  </script>
+
+</body>
+</html>

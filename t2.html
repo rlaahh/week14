@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/vfm3luh.css">
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'ekp8plc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<title>살인의 추억</title>
+	<style type="text/css">
+		html,body{ margin:0;
+		height:100%;
+		color: #D9D9D9;
+		font-family: pretendard, sans-serif;
+		font-weight: 400;
+		font-style: normal;}
+
+		h1{background: #D9D9D9;
+			color: #0019FF;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 4rem;
+			z-index: 10;
+			display: inline-block;
+			margin-top: 20px;
+			margin-bottom: 8px;
+			line-height: 1;
+			}
+			.number {
+		  	display: inline-block; 
+		  	background: #767676;
+		  	color: #00FF40;
+		  	padding: 0em 0.2em;       /* h1 padding에 맞춰서 조정 */
+		  	margin-right: 0.1em;
+		  	line-height: 1;}
+
+		p{color: #D9D9D9;
+			font-size: 2rem;
+			line-height: 1.7;
+			padding: 0px 80px 0px 80px;
+			z-index: 1;
+			position: relative;
+			margin-top: 0;
+			font-family: pretendard, sans-serif;
+			font-weight: 500;
+			font-style: normal;}
+		
+		section{display: flex;
+		height:100vh;}
+
+		.left{height: 100vh;
+		flex: 3;
+		background: black;
+		overflow-x:hidden;
+		padding-left: 80px;
+		 overflow-y: auto;
+		 /* 스크롤바 숨기기 */
+    scrollbar-width: none; /* 파이어폭스 */
+    -ms-overflow-style: none; /* IE 10+ */
+		}
+		.left::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 엣지 */
+		}
+	
+
+		.right{height:100vh;
+		flex: 7;
+		background: black; 
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin: auto;}
+
+
+		.en{font-size: 2rem;
+			line-height: 1.2;
+			background: #D9D9D9;
+			color: #0019FF;
+			display: inline-block;
+			font-family: "helvetica-neue-lt-pro", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			}
+
+		.container {position: relative;
+  			display: inline-block;}
+		.q{padding: 0 0.4em;
+			background: #00FF40;
+			color: #0019FF;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 8px;
+			position: relative;
+			z-index: 2; 
+  			cursor: pointer;
+  			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+		.q-img {
+		  position: absolute;
+		  position: absolute;
+		  top: 8px;
+		  left: 20px;
+		  display: none;
+		  width: 200px;
+		  height: auto;
+		  z-index: 1;
+		}
+
+		/* hover 포스터 */
+		.container:hover .q-img {display: block;}
+		
+		.info-all{margin-top: 50px;
+			z-index: 0;
+			position: relative;}
+
+		.info{font-size: 1.2rem;
+			line-height: 1.5;
+		}
+
+
+		.point-wrap{position: relative;}
+		.point{padding: 0 0.4em;
+			background: #0019FF;
+			color: #00FF40;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 20px;
+			position:relative;
+			left: 80px;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+
+.point::after {
+  content: "밑줄친 부분에 마우스";
+  position: absolute;
+  left: calc(100% + 8px);    /* ! 오른쪽으로 8px */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  white-space: nowrap;
+font-family: pretendard, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+		.hover{position: relative; 
+			cursor: pointer;
+			position: relative; 
+			z-index: 2;
+			color: #D9D9D9;}
+		.hover img{display: none;
+			position: absolute;
+			top: var(--tooltip-top);
+  			left: var(--tooltip-left);
+  			width: auto;
+  			z-index: -1;}
+
+		.hover:hover img {display: block;}
+		.hover:hover {color: #00FF40;}
+
+		
+		.trailer-wrap {padding-left: 80px;
+			padding-top: 20px;}
+
+		/* 얜 keep */
+		.main{
+			width: 50%;
+			border-style: solid;
+			border-color: #D9D9D9;
+			display: block;
+			margin-top: 40px;
+		margin-bottom: 32px;}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="left">
+			<h1><span class="number">2</span>살인의 추억</h1>
+			<span class="en">Memories of Murder <br>(Salin-ui Chueok)</span>
+			<br>
+			<div class="container">
+				<div class="q">!</div>
+				<div class="q-img"><img src="film_img/2.png" style="width:100%;"></div>
+			</div>
+			<div class="info-all">
+			<div class="info">제작연도 &nbsp; &nbsp; &nbsp;2003</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">감독 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;봉준호</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">장르 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;범죄</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">출연 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;송강호, 김상경, 박해일,  <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;박노식, 전미선</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">상영시간 &nbsp; &nbsp; &nbsp;2시간 10분</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">키워드 &nbsp; &nbsp; &nbsp; &nbsp; 연쇄살인, 실화기반</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="trailer-wrap">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/0n_HQwQU8ls?si=meBqAbVvBWqjK9d2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="point">!</div>
+			
+			<p>1986년 가을,  <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>경기도 화성에서 강간살해 당한 여성의 시체<img src="t2/dead.png"></u></span>가 발견되고, 비슷한 수법의 사건이 연이어 발생한다. 얼굴만으로도 범인을 알 수 있다는 <span class="hover" style="--tooltip-top: -100px; --tooltip-left: 0;"><u>형사 박두만(송강호)<img src="t2/song.png"></u></span>은 살해당한 여성을 평소 쫓아다녔다는 지능이 모자란 <span class="hover" style="--tooltip-top: 40px; --tooltip-left: 0;"><u>백광호(박노식)<img src="t2/baek.png"></u></span>를 범인이라 확신하고, 형사 조용구(김뢰하)와 함께 구타를 하며 자백을 강요한다. 한편 서울에서 자원해 온 <span class="hover" style="--tooltip-top: -100px; --tooltip-left: -120px;"><u>서태윤(김상경)<img src="t2/kim.png"></u></span>은 사건 파일을 검토하며 실마리를 찾으려 한다. 백광호를 데리고 현장 검증을 나온 자리, 취재진들로 둘러싸인 그곳에서 백광호는 범행 사실을 부인한다. 서태윤은 <span class="hover" style="--tooltip-top: 20px; --tooltip-left: 0;"><u>비오는 날 빨간 옷을 입은 여자가 범행 대상<img src="t2/red.png"></u></span>이라는 공통점을 밝혀내고 함정수사를 벌이지만, 다음날 아침 다른 여인의 사체가 발견된다. 수사는 점점 미궁으로 빠지는 가운데, <span class="hover" style="--tooltip-top: 20px; --tooltip-left: 0;"><u>근처 공장에서 일하는 박현규(박해일)가 유력한 용의자로 지목<img src="t2/park.png"></u></span>된다. 때마침 범인의 유전자 단서가 나오고, 수사본부는 미국으로 유전자 감식을 요청한다. 박두만과 서태윤은 박현규가 범인이라 확신하지만, 마침내 도착한 감식 결과에는 그와 범인의 유전자가 일치하지 않는다는 소견이 적혀 있다. <span class="hover" style="--tooltip-top: -20px; --tooltip-left: 80px;"><u>2003년, 박두만은 우연히 17년 전의 사건 현장을 지나게 되고, 첫 번째 시체가 발견된 곳을 들여다본다.<img src="t2/look.png"></u></span>
+			</p>
+			
+		</div>
+	</section>
+	
+</body>
+</html>

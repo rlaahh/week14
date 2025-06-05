@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/vfm3luh.css">
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'ekp8plc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<title>바보들의 행진</title>
+	<style type="text/css">
+		html,body{ margin:0;
+		height:100%;
+		color: #D9D9D9;
+		font-family: pretendard, sans-serif;
+		font-weight: 400;
+		font-style: normal;}
+
+		h1{background: #D9D9D9;
+			color: #0019FF;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 4rem;
+			z-index: 10;
+			display: inline-block;
+			margin-top: 20px;
+			margin-bottom: 8px;
+			line-height: 1;
+			}
+			.number {
+		  	display: inline-block; 
+		  	background: #767676;
+		  	color: #00FF40;
+		  	padding: 0em 0.2em;       /* h1 padding에 맞춰서 조정 */
+		  	margin-right: 0.1em;
+		  	line-height: 1;}
+
+		p{color: #D9D9D9;
+			font-size: 2rem;
+			line-height: 1.7;
+			padding: 0px 80px 0px 80px;
+			z-index: 1;
+			position: relative;
+			margin-top: 0;
+			font-family: pretendard, sans-serif;
+			font-weight: 500;
+			font-style: normal;}
+		
+		section{display: flex;
+		height:100vh;}
+
+		.left{height: 100vh;
+		flex: 3;
+		background: #191E28;
+		overflow-x:hidden;
+		padding-left: 80px;
+		 overflow-y: auto;
+		 /* 스크롤바 숨기기 */
+    scrollbar-width: none; /* 파이어폭스 */
+    -ms-overflow-style: none; /* IE 10+ */
+		}
+		.left::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 엣지 */
+		}
+	
+
+		.right{height:100vh;
+		flex: 7;
+		background: #191E28; 
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin: auto;}
+
+
+		.en{font-size: 2rem;
+			line-height: 1.2;
+			background: #D9D9D9;
+			color: #0019FF;
+			display: inline-block;
+			font-family: "helvetica-neue-lt-pro", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			}
+
+		.container {position: relative;
+  			display: inline-block;}
+		.q{padding: 0 0.4em;
+			background: #00FF40;
+			color: #0019FF;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 8px;
+			position: relative;
+			z-index: 2; 
+  			cursor: pointer;
+  			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+		.q-img {
+		  position: absolute;
+		  position: absolute;
+		  top: 8px;
+		  left: 20px;
+		  display: none;
+		  width: 200px;
+		  height: auto;
+		  z-index: 1;
+		}
+
+		/* hover 포스터 */
+		.container:hover .q-img {display: block;}
+		
+		.info-all{margin-top: 50px;
+			z-index: 0;
+			position: relative;}
+
+		.info{font-size: 1.2rem;
+			line-height: 1.5;
+		}
+
+
+		.point-wrap{position: relative;}
+		.point{padding: 0 0.4em;
+			background: #0019FF;
+			color: #00FF40;
+			font-size: 2rem;
+			display: inline-block;
+			margin-top: 20px;
+			position:relative;
+			left: 80px;
+			font-family: "pretendard", sans-serif;
+			font-weight: 700;
+			font-style: normal;}
+
+.point::after {
+  content: "밑줄친 부분에 마우스";
+  position: absolute;
+  left: calc(100% + 8px);    /* ! 오른쪽으로 8px */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  white-space: nowrap;
+font-family: pretendard, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+		.hover{position: relative; 
+			cursor: pointer;
+			position: relative; 
+			z-index: 2;
+			color: #D9D9D9;}
+		.hover img{display: none;
+			position: absolute;
+			top: var(--tooltip-top);
+  			left: var(--tooltip-left);
+  			width: auto;
+  			z-index: -1;}
+
+		.hover:hover img {display: block;}
+		.hover:hover {color: #00FF40;}
+
+		
+		.trailer-wrap {padding-left: 80px;
+			padding-top: 20px;}
+
+		/* 얜 keep */
+		.main{
+			width: 50%;
+			border-style: solid;
+			border-color: #D9D9D9;
+			display: block;
+			margin-top: 40px;
+		margin-bottom: 32px;}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="left">
+			<h1><span class="number">6</span>바보들의 행진</h1>
+			<span class="en">The March of Fools <br>(Babodeul-ui haengjin)</span>
+			<br>
+			<div class="container">
+				<div class="q">!</div>
+				<div class="q-img"><img src="film_img/6.png" style="width:100%;"></div>
+			</div>
+			<div class="info-all">
+			<div class="info">제작연도 &nbsp; &nbsp; &nbsp;1975</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">감독 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;하길종</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">장르 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;로맨스</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">출연 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;윤문섭, 하재영, 이영옥,  <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;김영숙, 김상배</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">상영시간 &nbsp; &nbsp; &nbsp;1시간 57분</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			<div class="info">키워드 &nbsp; &nbsp; &nbsp; &nbsp; 청춘, 방황, 한국소설원작</div>
+			<hr style="height: 2px; width: 300px;border: none; background: #D9D9D9; margin: 4px 0 10px 0px">
+			
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="trailer-wrap">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/4PvzT5WnNrA?si=7Iwfl7glX3qndKqv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="point">!</div>
+			
+			<p>Y대학 철학과에 다니는 병태(윤문섭)와 영철(하재영)은 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>그룹 미팅을 통해 또래의 H대학 불문과의 영자(이영옥)와 순자(김영숙)을 알게 된다.<img src="t6/meeting.png"></u></span> 그들은 그저 만나고 하릴없이 대화할 뿐이다. <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>병태는 영자에게 농담처럼 결혼하자고 말하지만,<img src="t6/talk.png"></u></span> 영자는 철학과 출신은 전망이 없다는 말로 그의 현실을 지적한다. 그 후로도 병태와 영자는 데이트를 즐기지만, <span class="hover" style="--tooltip-top: 120px; --tooltip-left: -140px;"><u>어느 날 영자는 선본 남자와 곧 결혼할지도 모른다는 말을 하며 앞으로 만나지 말자고 통보<img src="t6/marry.png"></u></span>한다. 한편 언제나 자전거를 타고 다니며 술만 마시면 고래를 찾으러 떠나겠다고 하는 <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>영철<img src="t6/young.png"></u></span>은 순자를 좋아하지만, 순자는 말도 더듬고 전망도 보이지 않으며 군 입대 신체검사에서도 탈락한 영철을 거부하고, 영철은 이에 절망한다. 앞이 보이지 않는 상태에서 병태와 영철은 바다로 간다. 예쁜 고래를 잡으러 떠나겠다던 영철은 바닷가 절벽까지 자전거를 몰고 올라가 드넓은 바다로 뛰어든다. 학교는 무기한 휴강에 돌입하고, 텅 빈 교정을 서성이며 병태는 괴로워한다. 결국 병태는 입대를 하고, 병태를 만나지 않겠다던 영자는 역으로 병태를 마중 나온다. <span class="hover" style="--tooltip-top: -200px; --tooltip-left: 0;"><u>입영열차 차창에 매달려 병태와 영자는 입맞춤<img src="t6/kiss.png"></u></span>을 한다.
+			</p>
+			
+		</div>
+	</section>
+	
+</body>
+</html>
